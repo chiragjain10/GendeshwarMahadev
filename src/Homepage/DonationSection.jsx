@@ -85,9 +85,6 @@ const DonationSection = () => {
                     src={donation.image}
                     alt={donation.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
-                    onError={(e) => {
-                      e.target.src = "https://via.placeholder.com/400x300/DC2626/FFFFFF?text=Divine+Service";
-                    }}
                   />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>

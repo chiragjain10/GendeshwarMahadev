@@ -1,4 +1,5 @@
 import React from "react";
+import { useSearchParams } from "react-router-dom";
 import {
   FaArrowRight,
   FaHeart,
@@ -8,27 +9,67 @@ import {
 } from "react-icons/fa";
 
 const AboutSection = () => {
+  const [searchParams] = useSearchParams();
+  const lang = (searchParams.get("lang") || "en").toLowerCase() === "hi" ? "hi" : "en";
+
+  const labels = {
+    badgeLine: {
+      en: "Om Namah Shivaya • Blessings of Lord Shiva",
+      hi: "ॐ नमः शिवाय • भगवान शिव की कृपा",
+    },
+    headingLine1: {
+      en: "Dwadash Jyotirlinga",
+      hi: "श्री द्वादश ज्योतिर्लिंग",
+    },
+    headingLine2: {
+      en: "and Darshan of Char Dham",
+      hi: "एवं चारों धाम के दर्शन",
+    },
+    desc: {
+      en: "Experience the divine grace of Lord Shiva where peace, devotion and service come together. Join us at Shivdham Temple and receive the blessings of all 12 Jyotirlingas and Char Dham together.",
+      hi: "भगवान शिव की दिव्य कृपा का अनुभव करें - जहाँ शांति, भक्ति और सेवा एक साथ मिलते हैं। शिवधाम मंदिर में हमसे जुड़ें और सभी 12 ज्योतिर्लिंगों और चार धामों का आशीर्वाद एक साथ प्राप्त करें।",
+    },
+    features: [
+      { en: "Peace and Faith", hi: "शांति और आस्था" },
+      { en: "Service and Support", hi: "सेवा और सहयोग" },
+      { en: "100% Satisfaction", hi: "100% संतोष" },
+      { en: "Trusted Organization", hi: "विश्वसनीय संस्था" },
+    ],
+    overlayBless: {
+      en: "May Lord Shiva's grace always be with you",
+      hi: "भगवान शिव की कृपा सदैव आप पर बनी रहे",
+    },
+    years: {
+      en: "5+",
+      hi: "५+",
+    },
+    yearsCaption: {
+      en: "Years of Service",
+      hi: "वर्षों की सेवा",
+    },
+    ctaAbout: {
+      en: "Learn About Us",
+      hi: "हमारे बारे में जानें",
+    },
+    ctaContact: {
+      en: "Contact Us",
+      hi: "संपर्क करें",
+    },
+    mantraSubtitle: {
+      en: "Panchakshari Mantra - the divine five-letter mantra",
+      hi: "पंचाक्षरी मंत्र - पांच अक्षरों का दिव्य मंत्र",
+    },
+    altTemple: {
+      en: "Shiva Temple",
+      hi: "शिव मंदिर",
+    },
+  };
+
   const features = [
-    { 
-      icon: <FaHeart className="text-xl" />, 
-      text: "शांति और आस्था", 
-      color: "bg-gradient-to-r from-red-600 to-red-700" 
-    },
-    { 
-      icon: <FaHandsHelping className="text-xl" />, 
-      text: "सेवा और सहयोग", 
-      color: "bg-gradient-to-r from-red-600 to-red-700" 
-    },
-    { 
-      icon: <FaShieldAlt className="text-xl" />, 
-      text: "100% संतोष", 
-      color: "bg-gradient-to-r from-red-600 to-red-700" 
-    },
-    { 
-      icon: <FaAward className="text-xl" />, 
-      text: "विश्वसनीय संस्था", 
-      color: "bg-gradient-to-r from-red-600 to-red-700" 
-    },
+    { icon: <FaHeart className="text-xl" />, color: "bg-gradient-to-r from-red-600 to-red-700" },
+    { icon: <FaHandsHelping className="text-xl" />, color: "bg-gradient-to-r from-red-600 to-red-700" },
+    { icon: <FaShieldAlt className="text-xl" />, color: "bg-gradient-to-r from-red-600 to-red-700" },
+    { icon: <FaAward className="text-xl" />, color: "bg-gradient-to-r from-red-600 to-red-700" },
   ];
 
   return (
@@ -50,18 +91,20 @@ const AboutSection = () => {
             <div className="relative w-full max-w-md">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-200">
                 <img
-                  src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=500&h=400&fit=crop"
-                  alt="शिव मंदिर"
-                  className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-700"
+                  src="/images/shiv.png"
+                  alt={labels.altTemple[lang]}
+                  className="w-full object-cover transform hover:scale-105 transition-transform duration-700"
                   onError={(e) => {
-                    e.target.src = "https://via.placeholder.com/500x400/FFD700/FFFFFF?text=शिव+मंदिर";
+                    e.target.src = lang === "hi"
+                      ? "https://via.placeholder.com/500x400/FFD700/FFFFFF?text=शिव+मंदिर"
+                      : "https://via.placeholder.com/500x400/FFD700/FFFFFF?text=Shiva+Temple";
                   }}
                 />
                 {/* Sacred Text Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <div className="text-center text-white">
                     <div className="text-2xl font-bold font-devanagari mb-1">ॐ नमः शिवाय</div>
-                    <div className="text-sm text-amber-200">भगवान शिव की कृपा सदैव आप पर बनी रहे</div>
+                    <div className="text-sm text-amber-200">{labels.overlayBless[lang]}</div>
                   </div>
                 </div>
               </div>
@@ -69,9 +112,9 @@ const AboutSection = () => {
               {/* Experience Badge */}
               <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-red-700 to-red-800 text-white px-6 py-3 rounded-xl shadow-2xl border-2 border-amber-400">
                 <div className="text-center">
-                  <div className="text-2xl font-bold font-devanagari">५+</div>
+                  <div className="text-2xl font-bold font-devanagari">{labels.years[lang]}</div>
                   <div className="text-sm font-semibold uppercase tracking-wide">
-                    वर्षों की सेवा
+                    {labels.yearsCaption[lang]}
                   </div>
                 </div>
               </div>
@@ -89,27 +132,24 @@ const AboutSection = () => {
               <div className="inline-flex items-center gap-2 bg-red-600/10 border border-red-500/30 rounded-full px-4 py-2 backdrop-blur-sm">
                 <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
                 <p className="text-red-700 font-semibold text-sm tracking-wide">
-                  ॐ नमः शिवाय • भगवान शिव की कृपा
+                  {labels.badgeLine[lang]}
                 </p>
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                 <span className="bg-gradient-to-r from-red-700 to-red-800 bg-clip-text text-transparent">
-                  श्री द्वादश ज्योतिर्लिंग
+                  {labels.headingLine1[lang]}
                 </span>
                 <br />
                 <span className="text-gray-800">
-                  एवं चारों धाम के दर्शन
+                  {labels.headingLine2[lang]}
                 </span>
               </h2>
             </div>
 
             {/* Description */}
             <p className="text-gray-700 text-lg leading-relaxed font-medium">
-              <span className="text-red-600 font-bold">भगवान शिव</span> की दिव्य कृपा का अनुभव करें - 
-              जहाँ शांति, भक्ति और सेवा एक साथ मिलते हैं। 
-              <span className="text-red-700 font-semibold"> शिवधाम मंदिर</span> में हमसे जुड़ें और 
-              सभी 12 ज्योतिर्लिंगों और चार धामों का आशीर्वाद एक साथ प्राप्त करें।
+              {labels.desc[lang]}
             </p>
 
             {/* Features Grid */}
@@ -125,7 +165,7 @@ const AboutSection = () => {
                     {feature.icon}
                   </div>
                   <span className="font-semibold text-gray-800">
-                    {feature.text}
+                    {labels.features[index][lang]}
                   </span>
                 </div>
               ))}
@@ -138,7 +178,7 @@ const AboutSection = () => {
                   ॐ नमः शिवाय
                 </div>
                 <p className="text-gray-600 text-sm">
-                  पंचाक्षरी मंत्र - पांच अक्षरों का दिव्य मंत्र
+                  {labels.mantraSubtitle[lang]}
                 </p>
               </div>
             </div>
@@ -149,7 +189,7 @@ const AboutSection = () => {
                 href="/about"
                 className="bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
               >
-                <span className="font-semibold">हमारे बारे में जानें</span>
+                <span className="font-semibold">{labels.ctaAbout[lang]}</span>
                 <FaArrowRight className="text-sm" />
               </a>
 
@@ -157,7 +197,7 @@ const AboutSection = () => {
                 href="/contact"
                 className="border-2 border-red-600 text-red-700 hover:bg-red-600 hover:text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 justify-center shadow-md hover:shadow-lg"
               >
-                <span className="font-semibold">संपर्क करें</span>
+                <span className="font-semibold">{labels.ctaContact[lang]}</span>
               </a>
             </div>
           </div>

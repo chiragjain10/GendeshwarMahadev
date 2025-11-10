@@ -79,9 +79,6 @@ const BlogSection = () => {
                     src={article.img}
                     alt={article.title}
                     className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
-                    onError={(e) => {
-                      e.target.src = "https://via.placeholder.com/400x300/DC2626/FFFFFF?text=Spiritual+Blog";
-                    }}
                   />
                   
                   {/* Category Badges */}
@@ -134,9 +131,6 @@ const BlogSection = () => {
                         src={article.authorImg}
                         alt={article.author}
                         className="w-12 h-12 rounded-full object-cover border-2 border-amber-300"
-                        onError={(e) => {
-                          e.target.src = "https://via.placeholder.com/100/DC2626/FFFFFF?text=Author";
-                        }}
                       />
                       <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-red-600 rounded-full border-2 border-white"></div>
                     </div>

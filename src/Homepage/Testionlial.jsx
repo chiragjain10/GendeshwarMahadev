@@ -1,4 +1,5 @@
 import React from "react";
+import { useSearchParams } from "react-router-dom";
 import Slider from "react-slick";
 import { FaStar, FaChevronLeft, FaChevronRight, FaQuoteLeft } from "react-icons/fa";
 
@@ -10,30 +11,42 @@ import "slick-carousel/slick/slick-theme.css";
 const testimonials = [
   {
     name: "Mukesh Sharma",
-    role: "Head Priest",
+    role: { en: "Head Priest", hi: "मुख्य पुजारी" },
     image: "https://images.unsplash.com/photo-1589178849368-f43598d25e8e?w=150&h=150&fit=crop&crop=face",
-    review: "Serving at this Shiva temple has been the most fulfilling experience of my life. The divine energy here transforms every devotee's spiritual journey.",
+    review: {
+      en: "Serving at this Shiva temple has been the most fulfilling experience of my life. The divine energy here transforms every devotee's spiritual journey.",
+      hi: "इस शिव मंदिर में सेवा करना मेरे जीवन का सबसे संतोषजनक अनुभव रहा है। यहाँ की दिव्य ऊर्जा हर भक्त की आध्यात्मिक यात्रा को रूपांतरित करती है।",
+    },
     rating: 5,
   },
   {
     name: "Priya Devi",
-    role: "Regular Devotee",
+    role: { en: "Regular Devotee", hi: "नियमित भक्त" },
     image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
-    review: "The Rudrabhishek performed here brought immense peace to our family. Lord Shiva's blessings are truly felt in every corner of this sacred space.",
+    review: {
+      en: "The Rudrabhishek performed here brought immense peace to our family. Lord Shiva's blessings are truly felt in every corner of this sacred space.",
+      hi: "यहाँ किया गया रुद्राभिषेक हमारे परिवार के लिए अपार शांति लेकर आया। इस पवित्र स्थान के हर कोने में भगवान शिव की कृपा अनुभव होती है।",
+    },
     rating: 5,
   },
   {
     name: "Rajesh Kumar",
-    role: "Community Volunteer",
+    role: { en: "Community Volunteer", hi: "समुदाय स्वयंसेवक" },
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    review: "Working with this temple has deepened my connection with Lord Shiva. The authentic Vedic rituals and spiritual atmosphere are truly transformative.",
+    review: {
+      en: "Working with this temple has deepened my connection with Lord Shiva. The authentic Vedic rituals and spiritual atmosphere are truly transformative.",
+      hi: "इस मंदिर के साथ काम करने से भगवान शिव के साथ मेरा संबंध और गहरा हुआ है। प्रामाणिक वैदिक अनुष्ठान और आध्यात्मिक वातावरण वास्तव में रूपांतरित करने वाला है।",
+    },
     rating: 5,
   },
   {
     name: "Sunita Patel",
-    role: "Spiritual Seeker",
+    role: { en: "Spiritual Seeker", hi: "आध्यात्मिक साधक" },
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-    review: "The Maha Shivratri celebration here was beyond divine. The energy, the chants, and the devotion created an experience that touched my soul deeply.",
+    review: {
+      en: "The Maha Shivratri celebration here was beyond divine. The energy, the chants, and the devotion created an experience that touched my soul deeply.",
+      hi: "यहाँ महाशिवरात्रि का उत्सव दिव्यता से परे था। ऊर्जा, मंत्रोच्चार और भक्ति ने एक ऐसा अनुभव दिया जिसने मेरी आत्मा को गहराई से छू लिया।",
+    },
     rating: 5,
   },
 ];
@@ -60,6 +73,8 @@ const NextArrow = ({ onClick }) => (
 );
 
 const TestimonialsSection = () => {
+  const [searchParams] = useSearchParams();
+  const lang = (searchParams.get("lang") || "en").toLowerCase() === "hi" ? "hi" : "en";
   const settings = {
     dots: true,
     infinite: true,
@@ -113,14 +128,18 @@ const TestimonialsSection = () => {
           <div className="inline-flex items-center gap-2 bg-red-600/10 border border-red-500/30 rounded-full px-4 py-2 mb-4">
             <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
             <p className="text-red-700 font-semibold text-sm tracking-wide">
-              ॐ नमः शिवाय • Divine Experiences
+              {lang === "hi" ? "ॐ नमः शिवाय • दिव्य अनुभव" : "Om Namah Shivaya • Divine Experiences"}
             </p>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Voices of <span className="bg-gradient-to-r from-red-700 to-red-800 bg-clip-text text-transparent">Divine Blessings</span>
+            {lang === "hi" ? "दिव्य आशीर्वाद की आवाज़ें" : "Voices of "}
+            {lang === "hi" ? "" : <span className="bg-gradient-to-r from-red-700 to-red-800 bg-clip-text text-transparent">Divine Blessings</span>}
+            {lang === "hi" && <span className="bg-gradient-to-r from-red-700 to-red-800 bg-clip-text text-transparent">दिव्य आशीर्वाद</span>}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Hear from our devotees about their spiritual transformation and experiences with Lord Shiva's divine grace
+            {lang === "hi"
+              ? "हमारे भक्तों के अनुभव सुनें—कैसे उनकी आध्यात्मिक यात्रा भगवान शिव की दिव्य कृपा से परिवर्तित हुई।"
+              : "Hear from our devotees about their spiritual transformation and experiences with Lord Shiva's divine grace"}
           </p>
         </div>
 
@@ -141,7 +160,7 @@ const TestimonialsSection = () => {
                     
                     {/* Review Text */}
                     <p className="text-gray-700 text-xl leading-relaxed mb-8 italic font-medium">
-                      "{testimonial.review}"
+                      "{testimonial.review[lang]}"
                     </p>
                     
                     {/* Rating Stars */}
@@ -156,9 +175,6 @@ const TestimonialsSection = () => {
                           src={testimonial.image}
                           alt={testimonial.name}
                           className="w-20 h-20 rounded-full object-cover border-4 border-amber-300 shadow-lg"
-                          onError={(e) => {
-                            e.target.src = "https://via.placeholder.com/150/DC2626/FFFFFF?text=Devotee";
-                          }}
                         />
                         {/* Decorative Element */}
                         <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-red-600 rounded-full border-2 border-white"></div>
@@ -168,7 +184,7 @@ const TestimonialsSection = () => {
                           {testimonial.name}
                         </h4>
                         <p className="text-red-600 font-semibold">
-                          {testimonial.role}
+                          {testimonial.role[lang]}
                         </p>
                       </div>
                     </div>
@@ -186,7 +202,7 @@ const TestimonialsSection = () => {
               ॐ नमः शिवाय
             </div>
             <p className="text-gray-600 text-sm mt-1">
-              Lord Shiva's blessings flow through every devotee's heart
+              {lang === "hi" ? "भगवान शिव का आशीर्वाद हर भक्त के हृदय में प्रवाहित होता है" : "Lord Shiva's blessings flow through every devotee's heart"}
             </p>
           </div>
         </div>

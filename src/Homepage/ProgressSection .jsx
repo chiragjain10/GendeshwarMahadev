@@ -19,14 +19,6 @@ const ProgressSection = () => {
           {/* Left Image */}
           <div className="flex justify-center">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-200">
-              <img
-                src="https://images.unsplash.com/photo-1548351514-8b6d0f6c7499?w=400&h=300&fit=crop"
-                alt="Temple Donation"
-                className="rounded-2xl shadow-lg w-full max-w-sm object-cover transform hover:scale-105 transition-transform duration-700"
-                onError={(e) => {
-                  e.target.src = "https://via.placeholder.com/400x300/FFD700/FFFFFF?text=Temple+Donation";
-                }}
-              />
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>
             </div>
@@ -127,9 +119,6 @@ const ProgressSection = () => {
                 src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=400&h=300&fit=crop"
                 alt="Temple Service"
                 className="rounded-2xl shadow-lg w-full max-w-sm object-cover transform hover:scale-105 transition-transform duration-700"
-                onError={(e) => {
-                  e.target.src = "https://via.placeholder.com/400x300/DC2626/FFFFFF?text=Divine+Service";
-                }}
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>

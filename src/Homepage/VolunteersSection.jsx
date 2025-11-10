@@ -164,9 +164,6 @@ const VolunteersSection = () => {
                     src={volunteer.image}
                     alt={volunteer.name}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
-                    onError={(e) => {
-                      e.target.src = "https://via.placeholder.com/400x500/DC2626/FFFFFF?text=Volunteer";
-                    }}
                   />
                   
                   {/* Gradient Overlay */}

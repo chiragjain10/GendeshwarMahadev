@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+.absolute.inset-0.opacity-5{
+    top: 80px;
+}
+
+.AboutTimeline{
+    background: url(https://wallpapers.com/images/featured/spiritual-meditation-io6ggbz503c8o235.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.AboutTimeline::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.AboutTimeline .container{
+    position: relative;
+    z-index: 2;
+}

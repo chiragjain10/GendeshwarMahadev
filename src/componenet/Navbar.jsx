@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -8,27 +8,31 @@ import {
   FaTimes,
   FaPhone,
   FaHome,
-  FaBook,
   FaUser,
   FaHandsHelping,
-  FaCalendarAlt,
   FaPray,
   FaEnvelope,
-  FaDonate,
-  FaOm
+  FaOm,
+  FaLanguage
 } from "react-icons/fa";
 
 const Navbar = () => {
   const [openLeft, setOpenLeft] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const lang = (searchParams.get("lang") || "en").toLowerCase() === "hi" ? "hi" : "en";
+  const toggleLang = () => {
+    const params = new URLSearchParams(searchParams);
+    params.set("lang", lang === "hi" ? "en" : "hi");
+    navigate({ pathname: location.pathname, search: params.toString() }, { replace: true });
+  };
 
   const menuItems = [
     { name: "Home", path: "/", icon: FaHome },
     { name: "About", path: "/about", icon: FaUser },
     { name: "Services", path: "/service", icon: FaHandsHelping },
     { name: "Pujas", path: "/puja", icon: FaPray },
-    { name: "Events", path: "/events", icon: FaCalendarAlt },
-    { name: "Donation", path: "/donation", icon: FaDonate },
-    { name: "Blog", path: "/bloggrid", icon: FaBook },
     { name: "Contact", path: "/contact", icon: FaEnvelope }
   ];
 
@@ -46,7 +50,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex-1 flex justify-center md:flex-none md:mr-8">
-          <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition duration-300">
+          <Link to={{ pathname: "/", search: location.search }} className="flex items-center gap-3 hover:opacity-90 transition duration-300">
             <div className="p-2 bg-amber-500 rounded-full shadow-md">
               <FaOm className="text-white text-xl" />
             </div>
@@ -65,7 +69,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link
-                  to={item.path}
+                  to={{ pathname: item.path, search: location.search }}
                   className="font-medium text-white hover:text-amber-300 transition duration-300 py-2 px-4 rounded-lg hover:bg-red-600/50 text-sm lg:text-base"
                 >
                   {item.name}
@@ -76,9 +80,17 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Book Pandit Button */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center gap-2">
+          <button
+            onClick={toggleLang}
+            className="bg-white/20 hover:bg-white/30 text-white font-semibold px-3 py-2 rounded-lg transition duration-300 shadow-md flex items-center gap-2 text-sm lg:text-base"
+            aria-label="Toggle language"
+          >
+            <FaLanguage className="text-sm" />
+            <span>{lang === "hi" ? "EN" : "हिं"}</span>
+          </button>
           <Link
-            to="/contact"
+            to={{ pathname: "/contact", search: location.search }}
             className="bg-amber-500 hover:bg-amber-400 text-red-900 font-bold px-6 py-2 rounded-lg transition duration-300 shadow-md flex items-center gap-2 text-sm lg:text-base"
           >
             <FaPhone className="text-sm" />
@@ -117,7 +129,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link
-                  to={item.path}
+                  to={{ pathname: item.path, search: location.search }}
                   onClick={() => setOpenLeft(false)}
                   className="flex items-center font-medium text-white text-base py-3 px-4 hover:bg-red-600/50 transition duration-300 rounded-lg"
                 >
@@ -128,10 +140,21 @@ const Navbar = () => {
             ))}
           </ul>
 
+          <div className="mt-2">
+            <button
+              onClick={toggleLang}
+              className="w-full bg-white/20 hover:bg-white/30 text-white font-semibold px-4 py-3 rounded-lg transition duration-300 flex items-center justify-center gap-2"
+              aria-label="Toggle language"
+            >
+              <FaLanguage className="text-base" />
+              <span>{lang === "hi" ? "English" : "हिंदी"}</span>
+            </button>
+          </div>
+
           {/* Mobile Book Pandit Button */}
           <div className="mt-6 pt-6 border-t border-amber-300/30">
             <Link
-              to="/contact"
+              to={{ pathname: "/contact", search: location.search }}
               onClick={() => setOpenLeft(false)}
               className="w-full bg-amber-500 hover:bg-amber-400 text-red-900 font-bold px-6 py-3 rounded-lg transition duration-300 text-center block shadow-md flex items-center justify-center gap-2"
             >

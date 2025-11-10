@@ -189,7 +189,7 @@ const AboutPage = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-amber-50">
+      <section className="py-20 bg-gradient-to-b from-white to-amber-50 AboutTimeline">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-red-600/10 border border-red-500/30 rounded-full px-4 py-2 mb-4">
@@ -289,7 +289,7 @@ const AboutPage = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&h=500&fit=crop" 
+                  src="/images/shiv.png" 
                   alt="Shiva Dham Mission" 
                   className="rounded-2xl shadow-2xl w-full h-96 object-cover border-2 border-amber-200"
                 />
