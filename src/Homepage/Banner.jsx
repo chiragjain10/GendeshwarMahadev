@@ -83,7 +83,7 @@ const Banner = () => {
         <div className="absolute bottom-10 right-10 text-6xl">🙏</div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12" data-aos="fade-up">
         <div
           className={`flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 min-h-[80vh] ${
             current.align === "right" ? "lg:flex-row-reverse" : ""

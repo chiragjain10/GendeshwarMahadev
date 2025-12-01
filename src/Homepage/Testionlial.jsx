@@ -112,7 +112,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden font-bebas">
+    <section className="py-20 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden font-bebas" data-aos="fade-up">
       
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-5">

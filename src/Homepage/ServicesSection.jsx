@@ -62,10 +62,10 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden font-bebas">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden font-bebas">
       
       {/* Decorative Background Elements */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5" data-aos="fade-up">
         <div className="absolute top-20 left-10 text-6xl">🕉️</div>
         <div className="absolute bottom-20 right-10 text-6xl">🙏</div>
         <div className="absolute top-1/2 left-1/3 text-4xl">🔱</div>
@@ -74,7 +74,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         
         {/* Header Section */}
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center" data-aos="fade-up">
           <div className="inline-flex items-center gap-2 bg-red-600/10 border border-red-500/30 rounded-full px-4 py-2 mb-4">
             <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
             <p className="text-red-700 font-semibold text-sm tracking-wide">
@@ -90,7 +90,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
           {services.map((service, index) => (
             <div
               key={index}
@@ -124,7 +124,7 @@ const ServicesSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-16" data-aos="fade-up">
           <div className="bg-gradient-to-r from-red-700 to-red-800 rounded-2xl p-8 text-white shadow-2xl max-w-2xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               {labels.ctaTitle[lang]}
@@ -133,7 +133,7 @@ const ServicesSection = () => {
               {labels.ctaDesc[lang]}
             </p>
             <a 
-              href="/services" 
+              href="/puja " 
               className="inline-flex items-center bg-white text-red-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-50 hover:scale-105 transition-all duration-300 shadow-lg"
             >
               {labels.ctaBtn[lang]}
@@ -143,7 +143,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Sacred Mantra */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12" data-aos="fade-up">
           <div className="inline-block bg-white/80 backdrop-blur-sm rounded-full px-8 py-4 border border-amber-200 shadow-lg">
             <div className="text-red-700 text-2xl font-devanagari font-bold">
               ॐ नमः शिवाय

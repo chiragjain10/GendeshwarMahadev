@@ -1,0 +1,267 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Rudra Abhishek",
+      "hi": "रुद्राभिषेक"
+    },
+    "desc": {
+      "en": "Rudra Abhishek is a powerful Vedic ritual performed to please Lord Shiva by offering sacred items like milk, honey, ghee, curd, and water on the Shiva Linga. It is believed to remove negativity, bring peace, and bless devotees with health, prosperity, and success.",
+      "hi": "रुद्राभिषेक भगवान शिव को प्रसन्न करने के लिए किया जाने वाला एक अत्यंत शक्तिशाली वैदिक अनुष्ठान है। इसमें शिवलिंग पर दूध, दही, घी, शहद और पवित्र जल से अभिषेक किया जाता है। यह नकारात्मकता दूर कर, शांति, स्वास्थ्य, समृद्धि और सफलता प्रदान करता है।"
+    },
+    "shortDesc": {
+      "en": "A powerful Vedic ritual to please Lord Shiva for peace and prosperity.",
+      "hi": "शिव कृपा प्राप्त करने और शांति–समृद्धि के लिए किया जाने वाला शक्तिशाली अनुष्ठान।"
+    },
+    "image": "/images/Pujas/rudra_abhishek.jpg",
+    "link": "rudra-abhishek",
+    "category": "puja"
+  },
+
+  {
+    "id": 2,
+    "title": {
+      "en": "Maha Shivratri Puja",
+      "hi": "महाशिवरात्रि पूजा"
+    },
+    "desc": {
+      "en": "Maha Shivratri Puja is celebrated to honor the divine union of Lord Shiva and Goddess Parvati. This sacred night is believed to destroy past sins, fulfill wishes, and bring spiritual upliftment. Devotees observe fasts, perform abhishekam, and chant mantras to seek divine blessings.",
+      "hi": "महाशिवरात्रि पूजा भगवान शिव और माता पार्वती के दिव्य मिलन का पर्व है। यह पवित्र रात्रि पापों के नाश, मनोकामनाओं की पूर्ति और आध्यात्मिक उन्नति का प्रतीक है। भक्त उपवास रखते हैं, अभिषेक करते हैं और मंत्रजाप से शिव कृपा प्राप्त करते हैं।"
+    },
+    "shortDesc": {
+      "en": "A sacred night dedicated to Lord Shiva for divine blessings and wish fulfillment.",
+      "hi": "शिव कृपा, मनोकामना पूर्ति और आध्यात्मिक उत्थान के लिए किया जाने वाला पावन अनुष्ठान।"
+    },
+    "image": "/images/Pujas/maha_shivratri.jpg",
+    "link": "maha-shivratri",
+    "category": "puja"
+  },
+
+  {
+    "id": 3,
+    "title": {
+      "en": "Ram Katha",
+      "hi": "राम कथा"
+    },
+    "desc": {
+      "en": "Ram Katha is a divine narration of the life, virtues, and teachings of Lord Rama. Listening to Ram Katha purifies the mind, brings peace, strengthens family harmony, and inspires a righteous way of living.",
+      "hi": "राम कथा भगवान श्रीराम के जीवन, आदर्शों और शिक्षाओं का दिव्य वर्णन है। राम कथा के श्रवण से मन शुद्ध होता है, घर में शांति आती है और जीवन में धर्म के प्रति प्रेरणा मिलती है।"
+    },
+    "shortDesc": {
+      "en": "A spiritual narration of Lord Rama’s life and teachings.",
+      "hi": "भगवान श्रीराम के जीवन और आदर्शों का भक्तिमय वर्णन।"
+    },
+    "image": "/images/Pujas/ram_katha.jpg",
+    "link": "ram-katha",
+    "category": "katha"
+  },
+
+  {
+    "id": 4,
+    "title": {
+      "en": "Maha Shiv Puran Katha",
+      "hi": "महाशिव पुराण कथा"
+    },
+    "desc": {
+      "en": "Maha Shiv Puran Katha narrates the glory, stories, and divine miracles of Lord Shiva. This katha brings spiritual purification, removes obstacles, and invites divine protection and blessings.",
+      "hi": "महाशिव पुराण कथा में भगवान शिव की महिमा, कथाएँ और दिव्य लीलाओं का वर्णन होता है। यह कथा आध्यात्मिक शुद्धि, बाधाओं की समाप्ति और दिव्य संरक्षण प्राप्त कराने वाली मानी जाती है।"
+    },
+    "shortDesc": {
+      "en": "A devotional narration of the glory and stories of Lord Shiva.",
+      "hi": "भगवान शिव की महिमा और लीलाओं का दिव्य वर्णन।"
+    },
+    "image": "/images/Pujas/Maha_shiv_puran.jpg",
+    "link": "maha-shiv-puran",
+    "category": "katha"
+  },
+
+  {
+    "id": 5,
+    "title": {
+      "en": "Bhagwad Geeta Katha",
+      "hi": "भगवद् गीता कथा"
+    },
+    "desc": {
+      "en": "Bhagwad Geeta Katha explains the eternal teachings of Lord Krishna that guide humanity toward righteousness, peace, and self-realization. It brings mental clarity and helps overcome life challenges.",
+      "hi": "भगवद् गीता कथा में भगवान श्रीकृष्ण की दिव्य शिक्षाओं का वर्णन होता है, जो मनुष्य को धर्म, शांति और आत्मज्ञान की ओर प्रेरित करती हैं। यह मानसिक स्पष्टता और जीवन की समस्याओं से मुक्ति देती है।"
+    },
+    "shortDesc": {
+      "en": "A divine explanation of Lord Krishna’s teachings from the Geeta.",
+      "hi": "भगवान श्रीकृष्ण की गीता में कही दिव्य शिक्षाओं का भक्तिमय वर्णन।"
+    },
+    "image": "/images/Pujas/Bhagwad_gita.jpg",
+    "link": "bhagwad-geeta",
+    "category": "katha"
+  },
+
+  {
+    "id": 6,
+    "title": {
+      "en": "Shrimad Devi Bhagwat Puran",
+      "hi": "श्रीमद देवी भागवत पुराण"
+    },
+    "desc": {
+      "en": "Shrimad Devi Bhagwat Katha describes the glory of Maa Durga and her divine incarnations. It blesses devotees with strength, protection, prosperity, and spiritual upliftment.",
+      "hi": "श्रीमद देवी भागवत कथा में माँ दुर्गा और उनके दिव्य अवतारों की महिमा का वर्णन होता है। यह शक्ति, संरक्षण, समृद्धि और आध्यात्मिक उन्नति प्रदान करने वाली कथा है।"
+    },
+    "shortDesc": {
+      "en": "A sacred narration of the glory of Maa Durga and her divine forms.",
+      "hi": "माँ दुर्गा और उनके रूपों की महिमा का पवित्र वर्णन।"
+    },
+    "image": "/images/Pujas/shrimad_devi_bhagwad_puran.jpg",
+    "link": "shrimad-devi-bhagwad-puran",
+    "category": "katha"
+  },
+
+  {
+    "id": 7,
+    "title": {
+      "en": "Navchandi Yagna",
+      "hi": "नवचंडी यज्ञ"
+    },
+    "desc": {
+      "en": "Navchandi Yagna is performed to worship the nine forms of Goddess Durga. It removes negative energies, protects from obstacles, and brings peace, power, and prosperity.",
+      "hi": "नवचंडी यज्ञ देवी दुर्गा के नौ रूपों की उपासना के लिए किया जाता है। यह नकारात्मक ऊर्जा को दूर करता है, बाधाओं को समाप्त करता है और शांति व समृद्धि प्रदान करता है।"
+    },
+    "shortDesc": {
+      "en": "A sacred yagna dedicated to the nine forms of Goddess Durga.",
+      "hi": "देवी दुर्गा के नौ रूपों की उपासना हेतु किया जाने वाला पवित्र यज्ञ।"
+    },
+    "image": "/images/Pujas/navchandi_yagna.jpg",
+    "link": "navchandi-yagna",
+    "category": "yagna"
+  },
+
+  {
+    "id": 8,
+    "title": {
+      "en": "Ganesh Yagna",
+      "hi": "गणेश यज्ञ"
+    },
+    "desc": {
+      "en": "Ganesh Yagna is performed to invoke Lord Ganesha’s blessings for the removal of obstacles, success in new beginnings, and harmony in life.",
+      "hi": "गणेश यज्ञ भगवान गणेश की कृपा प्राप्त करने, बाधाओं को दूर करने और नए कार्यों में सफलता के लिए किया जाता है।"
+    },
+    "shortDesc": {
+      "en": "A sacred ritual to seek the blessings of Lord Ganesha for success and positivity.",
+      "hi": "भगवान गणेश की कृपा हेतु किया जाने वाला शुभ यज्ञ।"
+    },
+    "image": "/images/Pujas/Ganesh_yagna.jpg",
+    "link": "ganesh-yagna",
+    "category": "yagna"
+  },
+
+  {
+    "id": 9,
+    "title": {
+      "en": "Vishnu Yagna",
+      "hi": "विष्णु यज्ञ"
+    },
+    "desc": {
+      "en": "Vishnu Yagna is performed to seek blessings of Lord Vishnu for peace, prosperity, harmony, and protection from negative influences.",
+      "hi": "विष्णु यज्ञ भगवान विष्णु की कृपा प्राप्त करने, शांति, समृद्धि और संरक्षण हेतु किया जाता है।"
+    },
+    "shortDesc": {
+      "en": "A divine yagna to receive the blessings of Lord Vishnu.",
+      "hi": "भगवान विष्णु की कृपा के लिए किया जाने वाला दिव्य यज्ञ।"
+    },
+    "image": "/images/Pujas/vishnu_yagna.jpg",
+    "link": "vishnu-yagna",
+    "category": "yagna"
+  },
+
+  {
+    "id": 10,
+    "title": {
+      "en": "Maha Mrityunjay Mantra Jaap",
+      "hi": "महा मृत्युंजय मंत्र जाप"
+    },
+    "desc": {
+      "en": "Maha Mrityunjay Mantra Jaap is one of the most powerful rituals dedicated to Lord Shiva for healing, protection, longevity, and overcoming life-threatening situations.",
+      "hi": "महा मृत्युंजय मंत्र जाप भगवान शिव को समर्पित अत्यंत शक्तिशाली अनुष्ठान है, जो आरोग्य, सुरक्षा, दीर्घायु और जीवन की कठिन परिस्थितियों से रक्षा प्रदान करता है।"
+    },
+    "shortDesc": {
+      "en": "A healing and protective mantra dedicated to Lord Shiva.",
+      "hi": "आरोग्य और सुरक्षा देने वाला भगवान शिव का शक्तिशाली मंत्र जाप।"
+    },
+    "image": "/images/Pujas/maha_mrityunjay_jap.jpg",
+    "link": "maha-mrityunjay-mantra",
+    "category": "havan"
+  },
+
+  {
+    "id": 11,
+    "title": {
+      "en": "Shri Suktam Havan",
+      "hi": "श्री सूक्तम हवन"
+    },
+    "desc": {
+      "en": "Shri Suktam Havan is performed to seek the blessings of Goddess Lakshmi for wealth, prosperity, harmony, and abundance in life.",
+      "hi": "श्री सूक्तम हवन मां लक्ष्मी की कृपा प्राप्त करने, धन, समृद्धि और सौभाग्य हेतु किया जाता है।"
+    },
+    "shortDesc": {
+      "en": "A sacred havan for Goddess Lakshmi’s blessings of wealth and prosperity.",
+      "hi": "मां लक्ष्मी की कृपा और समृद्धि के लिए किया जाने वाला पवित्र हवन।"
+    },
+    "image": "/images/Pujas/shri_suktam_havan.jpg",
+    "link": "shree-suktam-havan",
+    "category": "havan"
+  },
+
+  {
+    "id": 12,
+    "title": {
+      "en": "Rudra Havan",
+      "hi": "रुद्र हवन"
+    },
+    "desc": {
+      "en": "Rudra Havan is performed to invoke Lord Shiva’s blessings for purification, protection, and removal of obstacles.",
+      "hi": "रुद्र हवन भगवान शिव की कृपा प्राप्त करने, पवित्रता, सुरक्षा और बाधाओं की समाप्ति हेतु किया जाता है।"
+    },
+    "shortDesc": {
+      "en": "A sacred fire ritual dedicated to Lord Shiva.",
+      "hi": "भगवान शिव को समर्पित पवित्र हवन।"
+    },
+    "image": "/images/Pujas/rudra_havan.jpg",
+    "link": "rudra-havan",
+    "category": "havan"
+  },
+
+  {
+    "id": 13,
+    "title": {
+      "en": "Shat Chandi Yagna",
+      "hi": "शतचंडी यज्ञ"
+    },
+    "desc": {
+      "en": "Shat Chandi Yagna is one of the most powerful rituals dedicated to Goddess Chandi for protection, victory over enemies, and removal of major life obstacles.",
+      "hi": "शतचंडी यज्ञ देवी चंडी को समर्पित अत्यंत शक्तिशाली अनुष्ठान है, जो संकटों से रक्षा, शत्रुओं पर विजय और जीवन की बड़ी बाधाओं को दूर करता है।"
+    },
+    "shortDesc": {
+      "en": "A highly powerful yagna dedicated to Goddess Chandi.",
+      "hi": "देवी चंडी की कृपा हेतु किया जाने वाला अत्यंत शक्तिशाली यज्ञ।"
+    },
+    "image": "/images/Pujas/sat_chandi_yagna.jpg",
+    "link": "shat-chandi-yagna",
+    "category": "yagna"
+  },
+
+  {
+    "id": 14,
+    "title": {
+      "en": "Marriage Ceremony (Vivah Sanskar)",
+      "hi": "विवाह संस्कार"
+    },
+    "desc": {
+      "en": "A traditional Hindu marriage ceremony performed with Vedic rituals to bless the couple with harmony, prosperity, love, and a blissful married life.",
+      "hi": "वैदिक विधि से संपन्न होने वाला पारंपरिक हिंदू विवाह संस्कार, जो दंपति को प्रेम, सौख्य, समृद्धि और सुखद वैवाहिक जीवन का आशीर्वाद देता है।"
+    },
+    "shortDesc": {
+      "en": "A sacred Vedic wedding ceremony for a blissful marital life.",
+      "hi": "सुखद वैवाहिक जीवन हेतु किया जाने वाला पवित्र वैदिक विवाह संस्कार।"
+    },
+    "image": "/images/Pujas/mrriage_ceremony.jpg",
+    "link": "marriage-ceremony",
+    "category": "vivah"
+  }
+]

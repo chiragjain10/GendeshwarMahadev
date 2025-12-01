@@ -73,7 +73,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 font-bebas">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden">
       
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-5">
@@ -99,9 +99,10 @@ const AboutSection = () => {
                       ? "https://via.placeholder.com/500x400/FFD700/FFFFFF?text=शिव+मंदिर"
                       : "https://via.placeholder.com/500x400/FFD700/FFFFFF?text=Shiva+Temple";
                   }}
+                  data-aos="fade-up"
                 />
                 {/* Sacred Text Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4" data-aos="fade-up">
                   <div className="text-center text-white">
                     <div className="text-2xl font-bold font-devanagari mb-1">ॐ नमः शिवाय</div>
                     <div className="text-sm text-amber-200">{labels.overlayBless[lang]}</div>
@@ -110,7 +111,7 @@ const AboutSection = () => {
               </div>
 
               {/* Experience Badge */}
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-red-700 to-red-800 text-white px-6 py-3 rounded-xl shadow-2xl border-2 border-amber-400">
+              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-red-700 to-red-800 text-white px-6 py-3 rounded-xl shadow-2xl border-2 border-amber-400" data-aos="fade-up">
                 <div className="text-center">
                   <div className="text-2xl font-bold font-devanagari">{labels.years[lang]}</div>
                   <div className="text-sm font-semibold uppercase tracking-wide">
@@ -156,6 +157,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (
                 <div
+                  data-aos="fade-up"
                   key={index}
                   className="flex items-center gap-3 p-3 bg-white rounded-lg border border-amber-200 shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300"
                 >
@@ -172,7 +174,7 @@ const AboutSection = () => {
             </div>
 
             {/* Sacred Mantra Box */}
-            <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl p-4 border-2 border-amber-300 shadow-inner">
+            <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl p-4 border-2 border-amber-300 shadow-inner" data-aos="fade-up">
               <div className="text-center">
                 <div className="text-red-700 text-2xl font-devanagari font-bold mb-2">
                   ॐ नमः शिवाय
@@ -184,7 +186,7 @@ const AboutSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4" data-aos="fade-up">
               <a
                 href="/about"
                 className="bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 flex items-center gap-2 justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
