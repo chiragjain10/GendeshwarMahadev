@@ -79,8 +79,6 @@ const Banner = () => {
 
       {/* Decorative Spiritual Symbols */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 text-6xl">🕉️</div>
-        <div className="absolute bottom-10 right-10 text-6xl">🙏</div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12" data-aos="fade-up">

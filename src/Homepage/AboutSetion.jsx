@@ -74,14 +74,6 @@ const AboutSection = () => {
 
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden">
-      
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 text-6xl">🕉️</div>
-        <div className="absolute bottom-10 right-10 text-6xl">🙏</div>
-        <div className="absolute top-1/2 left-1/4 text-4xl">🔱</div>
-        <div className="absolute bottom-1/3 right-1/3 text-5xl">☸️</div>
-      </div>
 
       <div className="container mx-auto relative px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

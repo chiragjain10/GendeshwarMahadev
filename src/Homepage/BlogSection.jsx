@@ -41,14 +41,6 @@ const BlogSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden">
-      
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 text-6xl">🕉️</div>
-        <div className="absolute bottom-10 right-10 text-6xl">🙏</div>
-        <div className="absolute top-1/2 left-1/4 text-4xl">🔱</div>
-      </div>
-
       <div className="container mx-auto px-6 relative z-10">
         
         {/* Section Header */}

@@ -113,14 +113,6 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden font-bebas" data-aos="fade-up">
-      
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 text-6xl">🕉️</div>
-        <div className="absolute bottom-10 right-10 text-6xl">🙏</div>
-        <div className="absolute top-1/2 left-1/4 text-4xl">🔱</div>
-      </div>
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
@@ -170,15 +162,6 @@ const TestimonialsSection = () => {
                     
                     {/* User Info */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                      <div className="relative">
-                        <img
-                          src={testimonial.image}
-                          alt={testimonial.name}
-                          className="w-20 h-20 rounded-full object-cover border-4 border-amber-300 shadow-lg"
-                        />
-                        {/* Decorative Element */}
-                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-red-600 rounded-full border-2 border-white"></div>
-                      </div>
                       <div className="text-center sm:text-left">
                         <h4 className="font-bold text-gray-900 text-xl mb-1">
                           {testimonial.name}

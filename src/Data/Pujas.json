@@ -17,7 +17,6 @@
     "link": "rudra-abhishek",
     "category": "puja"
   },
-
   {
     "id": 2,
     "title": {
@@ -36,7 +35,6 @@
     "link": "maha-shivratri",
     "category": "puja"
   },
-
   {
     "id": 3,
     "title": {
@@ -55,7 +53,6 @@
     "link": "ram-katha",
     "category": "katha"
   },
-
   {
     "id": 4,
     "title": {
@@ -74,7 +71,6 @@
     "link": "maha-shiv-puran",
     "category": "katha"
   },
-
   {
     "id": 5,
     "title": {
@@ -93,7 +89,6 @@
     "link": "bhagwad-geeta",
     "category": "katha"
   },
-
   {
     "id": 6,
     "title": {
@@ -112,7 +107,6 @@
     "link": "shrimad-devi-bhagwad-puran",
     "category": "katha"
   },
-
   {
     "id": 7,
     "title": {
@@ -131,7 +125,6 @@
     "link": "navchandi-yagna",
     "category": "yagna"
   },
-
   {
     "id": 8,
     "title": {
@@ -150,7 +143,6 @@
     "link": "ganesh-yagna",
     "category": "yagna"
   },
-
   {
     "id": 9,
     "title": {
@@ -169,7 +161,6 @@
     "link": "vishnu-yagna",
     "category": "yagna"
   },
-
   {
     "id": 10,
     "title": {
@@ -188,7 +179,6 @@
     "link": "maha-mrityunjay-mantra",
     "category": "havan"
   },
-
   {
     "id": 11,
     "title": {
@@ -207,7 +197,6 @@
     "link": "shree-suktam-havan",
     "category": "havan"
   },
-
   {
     "id": 12,
     "title": {
@@ -226,7 +215,6 @@
     "link": "rudra-havan",
     "category": "havan"
   },
-
   {
     "id": 13,
     "title": {
@@ -245,7 +233,6 @@
     "link": "shat-chandi-yagna",
     "category": "yagna"
   },
-
   {
     "id": 14,
     "title": {
@@ -263,5 +250,59 @@
     "image": "/images/Pujas/mrriage_ceremony.jpg",
     "link": "marriage-ceremony",
     "category": "vivah"
+  },
+  {
+    "id": 15,
+    "title": {
+      "en": "Nakshatra Shanti Puja",
+      "hi": "नक्षत्र शान्ति पूजा"
+    },
+    "desc": {
+      "en": "Nakshatra Shanti Puja is performed to reduce the negative effects of unfavorable Nakshatras in a person’s horoscope. This puja helps bring mental peace, stability, success, and protection from unseen obstacles caused by planetary influences.",
+      "hi": "नक्षत्र शान्ति पूजा कुंडली में अशुभ नक्षत्रों के प्रभाव को शांत करने के लिए की जाती है। यह पूजा मानसिक शांति, स्थिरता, सफलता और ग्रह दोषों से उत्पन्न बाधाओं से रक्षा प्रदान करती है।"
+    },
+    "shortDesc": {
+      "en": "A sacred puja to balance Nakshatra effects and bring peace and stability.",
+      "hi": "नक्षत्र दोषों की शांति और जीवन में संतुलन लाने हेतु की जाने वाली पूजा।"
+    },
+    "image": "/images/Pujas/NakshatraShanti.jpg",
+    "link": "nakshatra-shanti-puja",
+    "category": "puja"
+  },
+  {
+    "id": 16,
+    "title": {
+      "en": "Nav Grah Shanti Puja",
+      "hi": "नव ग्रह शान्ति पूजा"
+    },
+    "desc": {
+      "en": "Nav Grah Shanti Puja is performed to pacify the nine planets (Nav Grah) and reduce their malefic effects. This puja brings harmony, financial stability, career growth, good health, and relief from planetary doshas.",
+      "hi": "नव ग्रह शान्ति पूजा नवग्रहों के अशुभ प्रभावों को शांत करने हेतु की जाती है। यह पूजा जीवन में शांति, आर्थिक स्थिरता, करियर में उन्नति, उत्तम स्वास्थ्य और ग्रह दोषों से मुक्ति प्रदान करती है।"
+    },
+    "shortDesc": {
+      "en": "A powerful puja to calm planetary influences and improve life balance.",
+      "hi": "नवग्रह दोषों की शांति और जीवन में सकारात्मकता लाने की पूजा।"
+    },
+    "image": "/images/Pujas/NavGrahShanti.jpg",
+    "link": "nav-grah-shanti-puja",
+    "category": "puja"
+  },
+  {
+    "id": 17,
+    "title": {
+      "en": "Vastu Shanti Puja",
+      "hi": "वास्तु शान्ति पूजा"
+    },
+    "desc": {
+      "en": "Vastu Shanti Puja is performed to remove Vastu doshas from a home, office, or workplace. It ensures peace, prosperity, positive energy flow, good health, and harmony among family members.",
+      "hi": "वास्तु शान्ति पूजा घर, कार्यालय या कार्यस्थल में मौजूद वास्तु दोषों को दूर करने के लिए की जाती है। यह सकारात्मक ऊर्जा, सुख-समृद्धि, स्वास्थ्य और पारिवारिक सौहार्द प्रदान करती है।"
+    },
+    "shortDesc": {
+      "en": "A sacred puja to eliminate Vastu doshas and invite positive energy.",
+      "hi": "वास्तु दोष निवारण और सकारात्मक ऊर्जा हेतु की जाने वाली पवित्र पूजा।"
+    },
+    "image": "/images/Pujas/VastuShanti.jpg",
+    "link": "vastu-shanti-puja",
+    "category": "puja"
   }
 ]

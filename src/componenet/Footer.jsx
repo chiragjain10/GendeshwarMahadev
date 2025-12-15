@@ -56,12 +56,8 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <div className="rounded-full p-2 mr-1">
-                <div className="text-red-700 font-bold text-2xl">
-                  <FaOm className="text-white text-xl" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold">Gendeshwar Mahadev</h3>
+              <img src="/images/logo.png" alt="Gendeshwar Mahadev" />
+              {/* <h3 className="text-xl font-bold">Gendeshwar Mahadev</h3> */}
             </div>
             <p className="text-gray-200 text-sm">{current.description}</p>
             <div className="flex space-x-4 pt-2">

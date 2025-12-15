@@ -63,14 +63,6 @@ const ServicesSection = () => {
 
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden font-bebas">
-      
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 opacity-5" data-aos="fade-up">
-        <div className="absolute top-20 left-10 text-6xl">🕉️</div>
-        <div className="absolute bottom-20 right-10 text-6xl">🙏</div>
-        <div className="absolute top-1/2 left-1/3 text-4xl">🔱</div>
-      </div>
-
       <div className="container mx-auto px-6 relative z-10">
         
         {/* Header Section */}

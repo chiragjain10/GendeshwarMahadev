@@ -104,17 +104,17 @@ function Navbar() {
     { name: "Home", path: "/", icon: FaHome },
     { name: "About", path: "/about", icon: FaUser },
     { 
-      name: "PUJA SERVICES", 
+      name: "Puja Services", 
       path: "/puja",
       icon: FaPray,
     },
-    { name: "GALLERY", path: "/gallery", icon: FaUser },
-    { name: "CONTACT", path: "/contact", icon: FaEnvelope }
+    { name: "Gallery", path: "/gallery", icon: FaUser },
+    { name: "Contact", path: "/contact", icon: FaEnvelope }
   ];
 
   return (
     <div className="relative bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white shadow-lg border-b border-amber-300/30 z-40">
-      <nav className="flex items-center justify-between px-4 py-3 md:px-8 md:py-4">
+      <nav className="flex items-center justify-between px-4 md:px-8 md:py-4">
         {/* Mobile Menu Button */}
         <button
           onClick={() => setOpenLeft(true)}
@@ -126,16 +126,8 @@ function Navbar() {
 
         {/* Logo */}
         <div className="flex-1 flex justify-center md:flex-none md:mr-8">
-          <Link to={{ pathname: "/", search: location.search }} className="flex items-center gap-3 hover:opacity-90 transition duration-300">
-            <div className="p-2 bg-amber-500 rounded-full shadow-md">
-              <FaOm className="text-white text-xl" />
-            </div>
-            <div className="text-center">
-              <h1 className="text-xl md:text-2xl font-bold text-white">
-                Shiva Dham
-              </h1>
-              <p className="text-amber-200 text-xs hidden md:block">ॐ नमः शिवाय</p>
-            </div>
+          <Link to={{ pathname: "/", search: location.search }} className="flex items-center gap-3 hover:opacity-90 transition duration-300 logo">
+            <img src="/images/logo.png" alt="Gendeshwar Mahadev" />
           </Link>
         </div>
 

@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { useEffect } from 'react';
-import './App.css';
 import Navbar from './componenet/Navbar';
 import Home from './Homepage/Homepages';
 import AboutPage from './Pages/About';
@@ -10,6 +9,7 @@ import ContactPage from "./Pages/Contact";
 import PujaPage from "./Pages/Puja";
 import PujaDetail from "./Pages/PujaDetail";
 import Gallery from "./Pages/Gallery";
+import './App.css';
 
 // Scroll to top component
 const ScrollToTop = () => {
