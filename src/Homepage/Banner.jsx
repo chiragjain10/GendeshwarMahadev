@@ -6,7 +6,7 @@ const banners = [
   {
     id: 1,
     title: {
-      en: "Welcome to Shiva Dham Temple",
+      en: "Welcome to Shiv Dham Temple",
       hi: "शिव धाम मंदिर में आपका स्वागत है",
     },
     subtitle: {

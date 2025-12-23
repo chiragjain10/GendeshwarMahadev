@@ -250,7 +250,7 @@ function Navbar() {
               <FaOm className="text-white text-xl" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white">Shiva Dham</h1>
+              <h1 className="text-xl font-bold text-white">Shiv Dham</h1>
               <p className="text-amber-200 text-sm">ॐ नमः शिवाय</p>
             </div>
           </div>

@@ -48,7 +48,7 @@ const DonationPage = () => {
           Make a Donation
         </h1>
         <p className="text-gray-200 text-center mb-8">
-          Support Shiva Dham Temple and help us continue our spiritual services. Any contribution is greatly appreciated.
+          Support Shiv Dham Temple and help us continue our spiritual services. Any contribution is greatly appreciated.
         </p>
 
         {/* Donation Stats */}

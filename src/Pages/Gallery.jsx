@@ -16,7 +16,13 @@ const galleryImages = [
   { id: 9, src: '/images/Gallery/g9.jpg', category: 'festival' },
   { id: 10, src: '/images/Gallery/g10.jpg', category: 'puja' },
   { id: 11, src: '/images/Gallery/g11.jpg', category: 'temple' },
-  // { id: 12, src: '/images/Gallery/g12.jpg', category: 'festival' },
+  { id: 12, src: '/images/Gallery/g06.jpeg', category: 'others', name:"परम पूज्य भिक्षु जी महाराज" },
+  { id: 13, src: '/images/Gallery/g08.jpeg', category: 'others', name:"योग गुरु रामदेव बाबा" },
+  { id: 14, src: '/images/Gallery/g01.jpeg', category: 'others', name:"सुधांशु जी महाराज" },
+  { id: 15, src: '/images/Gallery/g02.jpeg', category: 'others', name:"परम पूज्य जंगलीदास जी महाराज" },
+  { id: 16, src: '/images/Gallery/g03.jpeg', category: 'others', name:"श्री श्री रविशंकर जी" },
+  { id: 17, src: '/images/Gallery/g04.jpeg', category: 'others', name:"श्री श्री रविशंकर जी" },
+  { id: 18, src: '/images/Gallery/g07.jpeg', category: 'others', name:"अखाड़ा परिषद के अध्यक्ष रघुमुनि जी" },
 ];
 
 const categories = [
@@ -24,6 +30,7 @@ const categories = [
   { id: 'puja', name: 'Puja Ceremonies' },
   { id: 'temple', name: 'Temple' },
   { id: 'festival', name: 'Festivals' },
+  { id: 'others', name: 'Others' },
 ];
 
 const Gallery = () => {
@@ -194,7 +201,7 @@ const Gallery = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <div className="text-white">
                       <span className="text-xs font-medium px-2 py-1 bg-red-600 rounded-full">
-                        {image.category.charAt(0).toUpperCase() + image.category.slice(1)}
+                        {(image?.name) ? image.name : image.category.charAt(0).toUpperCase() + image.category.slice(1)}
                       </span>
                     </div>
                   </div>

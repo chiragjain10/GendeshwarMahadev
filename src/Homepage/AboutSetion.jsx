@@ -40,8 +40,8 @@ const AboutSection = () => {
       hi: "भगवान शिव की कृपा सदैव आप पर बनी रहे",
     },
     years: {
-      en: "5+",
-      hi: "५+",
+      en: "25+",
+      hi: "२५+",
     },
     yearsCaption: {
       en: "Years of Service",
@@ -83,7 +83,7 @@ const AboutSection = () => {
             <div className="relative w-full max-w-md">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-200">
                 <img
-                  src="/images/shiv.png"
+                  src="/images/shiv2.jpeg"
                   alt={labels.altTemple[lang]}
                   className="w-full object-cover transform hover:scale-105 transition-transform duration-700"
                   onError={(e) => {

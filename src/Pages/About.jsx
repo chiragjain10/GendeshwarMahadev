@@ -66,7 +66,7 @@ const AboutPage = () => {
       hi: "समुदाय"
     },
     missionDescription: {
-      en: "At Shiva Dham, we are committed to preserving ancient Vedic traditions while making them accessible to modern seekers. Through daily pujas, meditation sessions, educational programs, and community service, we strive to create a sacred space where everyone can experience the transformative power of Lord Shiva's blessings and find their path to spiritual enlightenment.",
+      en: "At Shiv Dham, we are committed to preserving ancient Vedic traditions while making them accessible to modern seekers. Through daily pujas, meditation sessions, educational programs, and community service, we strive to create a sacred space where everyone can experience the transformative power of Lord Shiva's blessings and find their path to spiritual enlightenment.",
       hi: "शिव धाम में, हम प्राचीन वैदिक परंपराओं को संरक्षित करने और उन्हें आधुनिक साधकों के लिए सुलभ बनाने के लिए प्रतिबद्ध हैं। दैनिक पूजा, ध्यान सत्र, शैक्षिक कार्यक्रमों और सामुदायिक सेवा के माध्यम से, हम एक पवित्र स्थान बनाने का प्रयास करते हैं जहाँ हर कोई भगवान शिव के आशीर्वाद की परिवर्तनकारी शक्ति का अनुभव कर सके और आध्यात्मिक ज्ञान का मार्ग प्राप्त कर सके।"
     },
     divineBlessings: {
@@ -100,7 +100,7 @@ const AboutPage = () => {
     },
     // Timeline
     establishment: {
-      en: "Establishment of Shiva Dham Temple",
+      en: "Establishment of Shiv Dham Temple",
       hi: "शिव धाम मंदिर की स्थापना"
     },
     establishmentDesc: {
@@ -407,8 +407,8 @@ const AboutPage = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img
-                  src="/images/shiv.png"
-                  alt="Shiva Dham Mission"
+                  src="/images/shiv2.jpeg"
+                  alt="Shiv Dham Mission"
                   className="rounded-2xl shadow-2xl w-full object-cover border-2 border-amber-200"
                 />
                 {/* Sacred Mantra Overlay */}
